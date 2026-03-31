@@ -1,4 +1,4 @@
-@extends('documents.index')
+@extends('layouts.default')
 
 @section('title', 'Documentos')
 
