@@ -10,8 +10,7 @@ Route::get('/', function () {
 
 Route::get('admin/usuarios',[UserController::class,'index']);
 Route::get('admin/usuarios/{user}',[UserController::class,'show']);
-Route::get('admin/documents', [DocumentController::class, 'index']);
-// Route::get('admin/documents/{document}', [DocumentController::class, 'show']);
+Route::resource('documents', DocumentController::class);
 
 Route::get('pw2',function(){
     //return 'programação web II';
